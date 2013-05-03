@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="library_options">
+        <item>View All Questions</item>
+        <item>Recent Questions</item>
+        <item>General Questions</item>
+        <item>Nutrition Questions</item>
+        <item>Pharmaceutical Questions</item>
+    </string-array>
+</resources>

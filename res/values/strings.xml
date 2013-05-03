@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tryOut1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_view_answers">ViewAnswers</string>
+    <string name="title_activity_pose_question">PoseQuestion</string>
+    <string name="askSpec">Ask Specialist</string>
+    <string name="user_name">Username</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_nurse_home_screen">cHES</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="library">Library</string>
+    <string name="prompt_question">Enter Question Here</string>
+    <string name="pose_text">Specialists are available to answer any questions you may have. Questions must be as clear and concise as possible.</string>
+    <string name="title_activity_my_library">MyLibrary</string>
+    <string name="button_general">General</string>
+    <string name="button_pharma">Pharmaceutical</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="recent">Recent</string>
+    <string name="all">All</string>
+    <string name="hello">Hello World, Todo!</string>
+  	<string name="no_todos">Currently there are no Todo items maintained</string>
+  	<string name="menu_insert">Add Item</string>
+ 	 <string name="menu_delete">Delete Todo</string>
+  	<string name="todo_summary">Summary</string>
+  	<string name="todo_description">Delete Todo</string>
+ 	 <string name="todo_edit_summary">Summary</string>
+ 	 <string name="todo_edit_description">Description</string>
+  	<string name="todo_edit_confirm">Confirm</string>
+  	<string
+        name="login_activity_loginfail_text_both">The username or password isn\'t valid. A Sample SyncAdapter account is
+        required. Please try again. </string>
+    <string
+        name="login_activity_loginfail_text_pwonly">You entered the wrong password or your account has changed.
+        Please re-enter your password.</string>
+   
+    <string
+        name="login_activity_loginfail_text_pwmissing">Type the password for this account.</string>
+    <!--
+        Message shown if the provided account doesn't support the current
+        activity.
+    -->
+    <string
+        name="login_activity_newaccount_text">Sign in to your Sample SyncAdapter account. </string>
+     <!-- Label for this package -->
+    <string
+        name="label">Sample SyncAdapter</string>
+    <string name="splashString">Well informed nurses, healthier communities</string>
+    <string name="title_activity_mobile_learning_home">Home</string>
+    <string name="answer_time">answer_time</string>
+    <string name="article">Article</string>
+    <string name="articles">Articles</string>
+    <string name="farticles">Featured Articles</string>
+
+</resources>

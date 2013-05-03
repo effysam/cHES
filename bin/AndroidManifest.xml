@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="efua.g.tryout1"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:accountType="efua.g.tryout1">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+   
+         <service
+            android:name=".authenticator.AuthenticationService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        
+         
+        <activity
+            android:name="efua.g.tryout1.MainActivity"
+            android:label="@string/app_name" >
+          
+
+        </activity>
+        <activity
+            android:name="efua.g.tryout1.ViewAnswers"
+            android:label="@string/title_activity_view_answers" >
+        </activity>
+        <activity
+            android:name="efua.g.tryout1.PoseQuestion"
+            android:label="@string/title_activity_pose_question" >
+                   
+        </activity>
+        <activity
+            android:name="efua.g.tryout1.NurseLogin"
+            android:label="@string/title_activity_nurse_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >            
+        </activity>
+        <activity
+            android:name="efua.g.tryout1.NurseHomeScreen"
+            android:label="@string/title_activity_nurse_home_screen" >
+             
+        </activity>
+        <activity
+            android:name="efua.g.tryout1.FragmentActivity"
+            android:label="@string/title_activity_fragment">
+               
+       
+        </activity>
+        
+        <activity
+            android:name="efua.g.tryout1.MyLibrary"
+            android:label="@string/title_activity_my_library" >
+
+        </activity>
+        
+       
+        <activity 
+            android:name="TodoDetailActivity">
+             
+        </activity>
+              
+         <provider android:name="efua.g.tryout1.contentprovider.EduMaterialsContentProvider" 
+              android:authorities="efua.g.tryout1.contentprovider"
+              android:multiprocess="true" />
+                  
+         <activity android:name=".authenticator.AuthenticatorActivity"
+             android:label="@string/title_activity_nurse_login">
+			
+         </activity>
+        
+         <activity android:name="efua.g.tryout1.MobileLearningHome"
+             	   android:label="@string/title_activity_nurse_home_screen">
+               
+         </activity>
+         
+         <activity android:name="efua.g.tryout1.SplashScreen"
+             	   android:label="@string/title_activity_nurse_home_screen">
+          	<intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>   
+         </activity>
+         <activity android:name="EduDetails" android:label="cHES"></activity>
+        
+    </application>
+
+</manifest>
